@@ -15,6 +15,11 @@ header {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 header nav {
@@ -32,6 +37,7 @@ header nav {
 nav ul {
     list-style: none;
     display: flex;
+    margin-right: 20px;
 }
 
 nav ul li {
@@ -44,22 +50,121 @@ nav ul li a {
     font-size: 18px;
 }
 
-section {
-    padding: 20px;
-    margin: 20px 0;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-h2 {
+main {
+    margin-top: 80px;
+}
+
+.section {
+    padding: 60px 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.valores-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Para hacerlo responsive */
+}
+
+.valor-item {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.valor-item h3 {
+    margin-top: 15px;
+    font-size: 22px;
+    color: #007bff; /* Color azul como en el ejemplo */
+}
+
+.valor-item p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.icono {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+/* Ajustes de estilo responsivo */
+@media (max-width: 768px) {
+    .valores-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .valor-item {
+        max-width: 100%;
+    }
+}
+
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.text-container {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.text-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.text-container p, .text-container ul {
+    font-size: 18px;
+    color: #555;
+}
+
+.text-container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.text-container ul li {
     margin-bottom: 10px;
 }
 
-ul {
-    list-style: none;
+.text-container ul li strong {
+    color: #333;
 }
 
+/* Estilos para el pie de página */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
 }
