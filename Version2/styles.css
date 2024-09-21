@@ -31,7 +31,8 @@ header nav {
 }
 
 .logo {
-    width: 150px;
+    width: 200px;
+    height: auto;
 }
 
 nav ul {
@@ -190,3 +191,23 @@ footer p {
     height: 150px;
     object-fit: cover;
 }
+
+.quienes-somos .image-container img {
+    width: 70%;  /* Ajusta el porcentaje según el tamaño que desees */
+    height: auto;  /* Mantén la proporción de la imagen */
+}
+
+.valor-item img[alt="Icono de Familia"], 
+.valor-item img[alt="Icono de Eficiencia"] {
+    width: 50px;  /* Ajusta este valor según lo que desees */
+    height: 70px; /* Ajusta este valor si es necesario */
+}
+
+.valor-item img[alt="Icono de Gestión Integral"] {
+    width: 80px;  /* Ajusta el tamaño según tus preferencias */
+    height: 80px; /* Puedes cambiar este valor también */
+}
+
+
+
+
