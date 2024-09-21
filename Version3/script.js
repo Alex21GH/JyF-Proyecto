@@ -7,7 +7,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
         const targetElement = document.getElementById(targetId);
 
         window.scrollTo({
-            top: targetElement.offsetTop - 120, // Ajuste para que no quede debajo de la barra fija
+            top: targetElement.offsetTop - 70, // Ajuste para que no quede debajo de la barra fija
             behavior: 'smooth'
         });
     });

@@ -31,8 +31,7 @@ header nav {
 }
 
 .logo {
-    width: 250px;
-    height: auto;
+    width: 150px;
 }
 
 nav ul {
@@ -42,19 +41,17 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 25px;
+    margin-left: 20px;
 }
 
 nav ul li a {
     color: #555;
     text-decoration: none;
-    font-size: 20px;
-    padding: 10px 20px;
+    font-size: 18px;
 }
 
 nav ul li a:hover {
-    color: #007bff;
-    /*text-decoration: underline;*/
+    text-decoration: underline;
 }
 
 main {
@@ -194,22 +191,6 @@ footer p {
     object-fit: cover;
 }
 
-.quienes-somos .image-container img {
-    width: 70%;  /* Ajusta el porcentaje según el tamaño que desees */
-    height: auto;  /* Mantén la proporción de la imagen */
-}
-
-.valor-item img[alt="Icono de Familia"], 
-.valor-item img[alt="Icono de Eficiencia"] {
-    width: 50px;  /* Ajusta este valor según lo que desees */
-    height: 70px; /* Ajusta este valor si es necesario */
-}
-
-.valor-item img[alt="Icono de Gestión Integral"] {
-    width: 80px;  /* Ajusta el tamaño según tus preferencias */
-    height: 80px; /* Puedes cambiar este valor también */
-}
-
 .ubicacion {
     background-color: #f4f4f4; /* Color de fondo claro para diferenciar la sección */
     padding: 40px 20px;
@@ -226,6 +207,3 @@ footer p {
     height: 450px;
     border: none;
 }
-
-
-
