@@ -14,7 +14,7 @@ body {
 header {
     background-color: #fff;
     color: #333; 
-    padding: 2px 0; 
+    padding: 5px 0; 
     position: fixed;
     width: 100%;
     top: 0;
@@ -28,6 +28,7 @@ header nav {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    /*padding: 5px 0; */
 }
 
 .logo {
@@ -62,18 +63,38 @@ main {
 }
 
 .section {
-    padding-top: 100px; /* Añade un padding superior suficiente */
-    margin-top: 20px; /* Ajusta según necesidades */
+    padding-top: 100px; 
+    margin-top: 20px; 
     /*padding: 60px 20px;
     margin: 20px 0;*/
     text-align: center;
 
-    border-top: 1px dashed #ccc; /* Línea divisoria discontinua y gris claro */
-    opacity: 1; /* Hacer que sea más sutil con algo de transparencia */
-    width: 90%; /* Ajustar el ancho de la línea para que no sea de borde a borde */
+    border-top: 1px solid #ccc; /* Línea divisoria de color gris claro */
+    opacity: 1; 
+    width: 90%; 
     margin-left: auto;
     margin-right: auto;
 }
+
+.section.contacto {
+    text-align: center; 
+    padding: 40px 20px;
+    background-color: #333; 
+    color: #fff; 
+}
+
+.contacto-container {
+    max-width: 600px;
+    margin: 0 auto; 
+    text-align: center; 
+    padding: 20px;
+}
+
+.contacto-container p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
 
 .valores-container {
     display: flex;
@@ -81,7 +102,7 @@ main {
     align-items: flex-start;
     max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: wrap; /* Para hacerlo responsive */
+    flex-wrap: wrap; 
 }
 
 .valor-item {
@@ -94,7 +115,7 @@ main {
 .valor-item h3 {
     margin-top: 15px;
     font-size: 22px;
-    color: #007bff; /* Color azul como en el ejemplo */
+    color: #007bff; 
 }
 
 .valor-item p {
@@ -103,32 +124,52 @@ main {
     margin-top: 10px;
 }
 
+
+#quienes-somos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto; /* Cambiar de 100vh a auto para que se ajuste al contenido */
+    padding: 60px 0; /* Añadir un padding superior e inferior si es necesario */
+}
+
+#quienes-somos .image-container {
+    width: 100%;
+    height: auto; /* Dejar que la imagen mantenga su tamaño natural */
+}
+
+#quienes-somos .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Asegurar que la imagen se ajuste correctamente dentro de su contenedor */
+}
+
+
 /* Ajustar tamaño de todos los íconos */
 #valores .valor-item .icono,
 #servicios .valor-item .icono,
 #proyectos .valor-item .icono {
-    width: 80px;  /* Ajusta el tamaño deseado */
-    height: auto; /* Mantén la proporción correcta */
+    width: 80px;  
+    height: auto; 
 }
 
 /* Específicos para los valores */
 #valores .valor-item img {
-    width: 50px;  /* Ajusta este valor según el tamaño que desees */
-    height: 50px; /* Ajusta este valor si es necesario */
+    width: 50px;  
+    height: 50px; 
 }
 
 /* Específicos para los servicios */
 #servicios .valor-item img {
-    width: 70px; /* Ajusta este valor según el tamaño que desees */
-    height: 70px; /* Ajusta este valor si es necesario */
+    width: 70px; 
+    height: 70px; 
 }
 
 /* Específicos para los proyectos */
 #proyectos .valor-item img {
-    width: 80px;  /* Ajusta este valor según el tamaño que desees */
-    height: 80px; /* Ajusta este valor si es necesario */
+    width: 80px;  
+    height: 80px; 
 }
-
 
 /* Ajustes de estilo responsivo */
 @media (max-width: 768px) {
@@ -142,7 +183,7 @@ main {
     }
 
     .section {
-        width: 100%; /* En pantallas más pequeñas, la línea será de borde a borde */
+        width: 100%; 
     }
 }
 
@@ -206,8 +247,8 @@ footer p {
 }
 
 .contacto {
-    background-color: #333; /* Fondo oscuro */
-    color: #fff; /* Texto claro */
+    background-color: #333;
+    color: #fff; 
 }
 
 .contacto-container {
@@ -228,8 +269,8 @@ footer p {
 }
 
 .quienes-somos .image-container img {
-    width: 70%;  /* Ajusta el porcentaje según el tamaño que desees */
-    height: auto;  /* Mantén la proporción de la imagen */
+    width: 70%;  
+    height: auto;  
 }
 
 .valor-item img[alt="Icono de Familia"], 
