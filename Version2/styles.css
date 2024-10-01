@@ -14,7 +14,7 @@ body {
 header {
     background-color: #fff;
     color: #333; 
-    padding: 10px 0;
+    padding: 2px 0; 
     position: fixed;
     width: 100%;
     top: 0;
@@ -48,8 +48,8 @@ nav ul li {
 nav ul li a {
     color: #555;
     text-decoration: none;
-    font-size: 20px;
-    padding: 10px 20px;
+    font-size: 18px;
+    padding: 5px 10px;
 }
 
 nav ul li a:hover {
@@ -67,6 +67,12 @@ main {
     /*padding: 60px 20px;
     margin: 20px 0;*/
     text-align: center;
+
+    border-top: 1px dashed #ccc; /* Línea divisoria discontinua y gris claro */
+    opacity: 1; /* Hacer que sea más sutil con algo de transparencia */
+    width: 90%; /* Ajustar el ancho de la línea para que no sea de borde a borde */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .valores-container {
@@ -97,11 +103,32 @@ main {
     margin-top: 10px;
 }
 
-.icono {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+/* Ajustar tamaño de todos los íconos */
+#valores .valor-item .icono,
+#servicios .valor-item .icono,
+#proyectos .valor-item .icono {
+    width: 80px;  /* Ajusta el tamaño deseado */
+    height: auto; /* Mantén la proporción correcta */
 }
+
+/* Específicos para los valores */
+#valores .valor-item img {
+    width: 50px;  /* Ajusta este valor según el tamaño que desees */
+    height: 50px; /* Ajusta este valor si es necesario */
+}
+
+/* Específicos para los servicios */
+#servicios .valor-item img {
+    width: 70px; /* Ajusta este valor según el tamaño que desees */
+    height: 70px; /* Ajusta este valor si es necesario */
+}
+
+/* Específicos para los proyectos */
+#proyectos .valor-item img {
+    width: 80px;  /* Ajusta este valor según el tamaño que desees */
+    height: 80px; /* Ajusta este valor si es necesario */
+}
+
 
 /* Ajustes de estilo responsivo */
 @media (max-width: 768px) {
@@ -112,6 +139,10 @@ main {
 
     .valor-item {
         max-width: 100%;
+    }
+
+    .section {
+        width: 100%; /* En pantallas más pequeñas, la línea será de borde a borde */
     }
 }
 
