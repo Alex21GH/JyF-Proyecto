@@ -99,7 +99,7 @@ main {
 .valores-container {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: stretch;
     max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap; 
@@ -110,6 +110,7 @@ main {
     max-width: 300px;
     margin: 20px;
     text-align: center;
+   
 }
 
 .valor-item h3 {
@@ -156,7 +157,8 @@ main {
 /* Específicos para los valores */
 #valores .valor-item img {
     width: 50px;  
-    height: 50px; 
+    height: 50px;
+    margin: 0 auto;
 }
 
 /* Específicos para los servicios */
@@ -302,4 +304,14 @@ footer p {
 }
 
 
+/* Ajustar el margen superior para el ítem de Eficiencia */
+#valores .valor-item:nth-child(3) { /* Esto selecciona específicamente el tercer ítem */
+    margin-top: 43px; /* Ajusta este valor según necesites para alinear correctamente */
+}
 
+.quienes-somos .text-container {
+    text-align: center;  /* Alinea el texto al centro */
+    max-width: 100%;     /* Utiliza todo el ancho disponible */
+    margin: 0 auto;      /* Centra el contenedor horizontalmente si no es ya 100% de ancho */
+    padding: 20px;       /* Añade un poco de espacio alrededor del texto */
+}
