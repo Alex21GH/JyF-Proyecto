@@ -148,11 +148,16 @@ main {
 
 /* Ajustar tamaño de todos los íconos */
 #valores .valor-item .icono,
-#servicios .valor-item .icono,
-#proyectos .valor-item .icono {
-    width: 80px;  
+#servicios .valor-item .icono {
+    width: 100px;  
+    height: 50px; 
+}
+
+#proyectos .valor-item .icono{
+    width: 180px;  
     height: auto; 
 }
+
 
 /* Específicos para los valores */
 #valores .valor-item img {
@@ -169,8 +174,8 @@ main {
 
 /* Específicos para los proyectos */
 #proyectos .valor-item img {
-    width: 80px;  
-    height: 80px; 
+    width: 200px;  
+    height: auto; 
 }
 
 /* Ajustes de estilo responsivo */
@@ -304,14 +309,22 @@ footer p {
 }
 
 
-/* Ajustar el margen superior para el ítem de Eficiencia */
-#valores .valor-item:nth-child(3) { /* Esto selecciona específicamente el tercer ítem */
-    margin-top: 43px; /* Ajusta este valor según necesites para alinear correctamente */
+
+#valores .valor-item:nth-child(3) { 
+    margin-top: 50px; 
 }
 
 .quienes-somos .text-container {
-    text-align: center;  /* Alinea el texto al centro */
-    max-width: 100%;     /* Utiliza todo el ancho disponible */
-    margin: 0 auto;      /* Centra el contenedor horizontalmente si no es ya 100% de ancho */
-    padding: 20px;       /* Añade un poco de espacio alrededor del texto */
+    text-align: center;  
+    max-width: 100%;     
+    margin: 0 auto;     
+    padding: 20px; 
+}
+
+#proyectos .valor-item {
+    flex: 1;
+    max-width: 250px;  
+    margin: 20px;
+    text-align: center;
+    display: inline-block; 
 }
