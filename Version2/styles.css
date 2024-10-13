@@ -99,10 +99,10 @@ main {
 .valores-container {
     display: flex;
     justify-content: space-around;
-    align-items: stretch;
-    max-width: 1200px;
+    align-items: center;
+    /*max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;*/ 
 }
 
 .valor-item {
@@ -114,9 +114,13 @@ main {
 }
 
 .valor-item h3 {
-    margin-top: 15px;
+    /*margin-top: 15px;
     font-size: 22px;
-    color: #007bff; 
+    color: #007bff;*/
+    font-size: 22px;
+    color: #007bff;
+    margin-top: 15px;  /* Asegúrate de que este margen sea uniforme para todos */
+    text-align: center;
 }
 
 .valor-item p {
@@ -149,8 +153,8 @@ main {
 /* Ajustar tamaño de todos los íconos */
 #valores .valor-item .icono,
 #servicios .valor-item .icono {
-    width: 100px;  
-    height: 50px; 
+    width: 80px;  
+    height: 80px; 
 }
 
 #proyectos .valor-item .icono{
@@ -161,8 +165,8 @@ main {
 
 /* Específicos para los valores */
 #valores .valor-item img {
-    width: 50px;  
-    height: 50px;
+    width: 100px;  
+    height: 100px;
     margin: 0 auto;
 }
 
