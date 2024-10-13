@@ -96,22 +96,26 @@ main {
 }
 
 
+
 .valores-container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center; /* Alinea los elementos al centro horizontalmente */
+    align-items: stretch;  
     max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
+    gap: 30px; /* Espacio entre los elementos */
 }
+
 
 .valor-item {
     flex: 1 1 300 px;
     max-width: 300px;
     margin: 20px;
     text-align: center;
-   
+    justify-content: space-between; 
 }
+
 
 .valor-item h3 {
     /*margin-top: 15px;
@@ -121,6 +125,7 @@ main {
     color: #007bff;
     margin-top: 15px;  /* Asegúrate de que este margen sea uniforme para todos */
     text-align: center;
+    flex-grow: 1;
 }
 
 .valor-item p {
