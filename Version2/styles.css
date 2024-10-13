@@ -100,13 +100,13 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /*max-width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: wrap;*/ 
+    flex-wrap: wrap;
 }
 
 .valor-item {
-    flex: 1;
+    flex: 1 1 300 px;
     max-width: 300px;
     margin: 20px;
     text-align: center;
@@ -328,7 +328,8 @@ footer p {
 #proyectos .valor-item {
     flex: 1;
     max-width: 250px;  
-    margin: 20px;
+    margin: 40px;
     text-align: center;
     display: inline-block; 
 }
+
